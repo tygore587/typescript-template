@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.base.json",
+  // this is needed because we don't want to include tests and other configurations in the dist folder.
+  "exclude": ["test", "jest.config.ts"]
+}
