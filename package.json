@@ -10,6 +10,7 @@
     "dev": "nodemon $npm_package_main",
     "debug": "nodemon --inspect $npm_package_main",
     "docker": "docker buildx build -t $npm_package_name:$npm_package_version -t $npm_package_name .",
+    "docker:run": "docker run $npm_package_name",
     "lint": "prettier . --write",
     "prepare": "node .husky/install.mjs",
     "start": "node dist/index.js",
